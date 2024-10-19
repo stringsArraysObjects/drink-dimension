@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-
+import { Children } from "react";
 export default function RandomDrinkGenerator() {
-    
+    const result = []
     let [data, setData] = useState([])
     useEffect(() => {
                 const fetchData = async () => {
@@ -26,9 +26,12 @@ export default function RandomDrinkGenerator() {
                             <img src={data?.drinks['0']?.strDrinkThumb}/>  
                         </div>    
                         <div>
-                             {Object.values(data).map((value, index) =>  (
-                                <span key={index}>{value = data?.drinks['0']?.strIngredient1} </span> 
-                                ))}    
+                             <ul>
+                                <li>{data?.drinks['0']?.strIngredient1}</li> 
+                                <li>{data?.drinks['0']?.strIngredient2}</li> 
+                                <li>{data?.drinks['0']?.strIngredient3}</li> 
+                                <li>{data?.drinks['0']?.strIngredient4}</li> 
+                             </ul>
                         </div>
                 
             </div>
