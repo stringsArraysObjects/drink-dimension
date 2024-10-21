@@ -33,19 +33,10 @@ export default function RandomDrinkGenerator() {
                             <li key={index}>{data?.drinks[index]?.strIngredient4}</li> 
                         </ul>  
                         ))}
-                             
-                            {/* <h3>{data?.drinks?.strDrink}</h3>
-                            <img src={data?.drinks?.strDrinkThumb}/>  
-                            </div>     */}
-                        {/* <div>
-                              <ul>
-                                <li>{data?.drinks['0']?.strIngredient1}</li> 
-                                <li>{data?.drinks['0']?.strIngredient2}</li> 
-                                <li>{data?.drinks['0']?.strIngredient3}</li> 
-                                <li>{data?.drinks['0']?.strIngredient4}</li> 
-                             </ul> 
-                        </div> */}
-                
+                        
+                        {Object.values(data).map(( value, index) => (
+                            <span>{data?.drinks[index]?.strInstructions}</span>
+                        ))}    
             </div>
         )
     }
