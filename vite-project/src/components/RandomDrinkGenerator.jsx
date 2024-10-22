@@ -18,7 +18,7 @@ export default function RandomDrinkGenerator() {
         console.log(data)
         return (
             <div>
-                            
+                           <h1>Cocktail Of The Day</h1> 
                         {Object.values(data).map((value, index) =>  (
                         <h3 key={index}>{value = data?.drinks[index]?.strDrink} </h3> 
                         ))}
