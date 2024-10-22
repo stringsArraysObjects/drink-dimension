@@ -31,6 +31,10 @@ export default function RandomDrinkGenerator() {
                             <li key={index}>{data?.drinks[index]?.strIngredient2}</li> 
                             <li key={index}>{data?.drinks[index]?.strIngredient3}</li> 
                             <li key={index}>{data?.drinks[index]?.strIngredient4}</li> 
+                            <li key={index}>{data?.drinks[index]?.strIngredient5}</li> 
+                            <li key={index}>{data?.drinks[index]?.strIngredient6}</li> 
+                            <li key={index}>{data?.drinks[index]?.strIngredient7}</li> 
+                            <li key={index}>{data?.drinks[index]?.strIngredient8}</li> 
                         </ul>  
                         ))}
                         
